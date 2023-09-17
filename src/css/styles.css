@@ -1,0 +1,242 @@
+/*Variables*/
+:root {
+    --border-color: #999;
+    --main-color: #54B689;
+    --main-text-color: #FFF;
+    --bio-bg-color: #1E2A3A;
+    --about-bg-color: #111821;
+    --bio-border-color: #293544;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection {
+    color: #FFF;
+    background: #000;
+}
+
+/*General*/
+.highlight {
+    color: var(--main-color);
+}
+
+/*Containers*/
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text-color);
+}
+
+/*Bio container*/
+#bio-container {
+    flex: 1 1 20%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px 12px;
+    background-color: var(--bio-bg-color);
+    border-right: 5px solid var(--bio-border-color);
+}
+
+#bio-container h2 { margin-bottom: 25px; }
+
+#bio-container p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#bio-container img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#bio-container #welcome-text { font-weight: bold; }
+
+#social-container {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#social-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+    list-style: none;
+}
+
+#social-container li a {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+
+#email-container ion-icon {
+    font-size: 20px;
+    max-width: 20px;
+    margin-right: 3px;
+    color: var(--main-color);
+}
+
+#email-container a {
+    max-width: 225px;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+/*About container*/
+#about-container {
+    flex: 1 1 80%;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+}
+
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+#skills-section-title {
+    font-size: 32px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skills-box {
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid var(--main-color);
+}
+
+.skills-box i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+/*Mobile*/
+@media(max-width: 450px) {
+    #container { flex-direction: column; }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 { display: none; }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        padding: 30px;
+        text-align: justify;
+    }
+    
+    #about-container .description {
+        max-width: 100%;
+        line-height: 26px;
+        margin-right: 10px auto;
+    }
+
+    #about-container h1, #title, #skills-section-title { text-align: center; }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .skills-box i { font-size: 10px; }
+}
+
+@media(max-width: 540px) {
+    #container { flex-direction: column; }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 { display: none; }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #social-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #about-container h1, #title, #skills-section-title { text-align: center; }
+
+    #about-container .description {
+        max-width: 100%;
+        line-height: 26px;
+        margin-right: 10px auto;
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .skills-box i {
+        font-size: 60px;
+        margin-right: 0;
+        justify-content: space-evenly;
+    }
+}

@@ -194,8 +194,6 @@
         text-align: left;
         margin-bottom: 40px;
     }
-
-    .skills-box i { font-size: 10px; }
 }
 
 @media(max-width: 540px) {

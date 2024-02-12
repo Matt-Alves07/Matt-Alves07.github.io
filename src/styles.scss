@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/*Variables*/
+:root {
+  --border-color: #999;
+  --main-color: #54B689;
+  --main-text-color: #FFF;
+  --middle-gray: #1E2A3A;
+  --darker-gray: #111821;
+  --lighter-gray: #293544;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+*::selection {
+  color: #FFF;
+  background: #000;
+}

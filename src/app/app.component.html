@@ -1,65 +1,13 @@
 <div class="container">
-  <mat-toolbar class="toolbar mat-elevation-z8">
-    <button mat-icon-button class="burger" (click)="drawer.toggle()">
-      <mat-icon class="mat-18">menu</mat-icon>
-    </button>
+  <header>
+    <app-toolbar />
+  </header>
 
-    <span>Portfolio</span>
+  <main>
+    <router-outlet />
+  </main>
 
-    <span class="spacer"></span>
-
-    <div class="toolbar-buttons">
-      <button class="btn-text" mat-button routerLink="/home" routerLinkActive="menu-active-link">
-        <mat-icon class="mat-18">home</mat-icon>
-        Home
-      </button>
-
-      <button class="btn-text" mat-button routerLink="/technologies" routerLinkActive="menu-active-link">
-        <mat-icon class="mat-18">rocket_launch</mat-icon>
-        Technologies
-      </button>
-
-      <button class="btn-text" mat-button routerLink="/experiences" routerLinkActive="menu-active-link">
-        <mat-icon class="mat-18">ballot</mat-icon>
-        Experiences
-      </button>
-
-      <button class="btn-text" mat-button routerLink="/projects" routerLinkActive="menu-active-link">
-        <mat-icon class="mat-18">view_kanban</mat-icon>
-        Projects
-      </button>
-    </div>
-  </mat-toolbar>
-
-  <mat-drawer-container>
-    <mat-drawer #drawer class="drawer" mode="over">
-      <div class="side-btn">
-        <a class="sidenav-button" mat-button routerLink="/home" routerLinkActive="active-link" (click)="drawer.toggle()">
-          Home
-        </a>
-      </div>
-
-      <div class="side-btn">
-        <a class="sidenav-button" mat-button routerLink="/technologies" routerLinkActive="active-link" (click)="drawer.toggle()">
-          Technologies
-        </a>
-      </div>
-
-      <div class="side-btn">
-        <a class="sidenav-button" mat-button routerLink="/experiences" routerLinkActive="active-link" (click)="drawer.toggle()">
-          Experiences
-        </a>
-      </div>
-
-      <div class="side-btn">
-        <a class="sidenav-button" mat-button routerLink="/projects" routerLinkActive="active-link" (click)="drawer.toggle()">
-          Projects
-        </a>
-      </div>
-    </mat-drawer>
-
-    <mat-drawer-content class="drawer-content">
-      <router-outlet />
-    </mat-drawer-content>
-  </mat-drawer-container>
+  <footer>
+    <app-footer />
+  </footer>
 </div>

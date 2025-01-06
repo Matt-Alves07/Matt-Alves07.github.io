@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Passo 3.1: Verificar dependências
+      # Passo 3.1: Verificar dependências instaladas
       - name: Check installed dependencies
         run: npm list
 
@@ -42,9 +42,15 @@ jobs:
           git config --global user.name "Matt-Alves07"
           git config --global user.email "mathalves07.winstore@outlook.com"
 
-      # Passo 6: Deploy no GitHub Pages
-      - name: Deploy to GitHub Pages
+      # Passo 6: Forçar o uso do GITHUB_TOKEN para autenticação com o repositório
+      - name: Set up GitHub Pages Deploy
         run: |
-          npm run deploy
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch --all
+          git checkout ${{ github.ref }}
+        
+      # Passo 7: Deploy no GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

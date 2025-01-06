@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ./build --no-cache"
+    "deploy": "gh-pages -d ./dist --no-cache"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

@@ -44,4 +44,7 @@ jobs:
 
       # Passo 6: Deploy no GitHub Pages
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: |
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -34,7 +34,7 @@ jobs:
 
       # Passo 4.1: Verificar se a pasta build foi criada
       - name: Check if build folder exists
-        run: ls -la build
+        run: ls -la dist
 
       # Passo 5: Deploy no GitHub Pages
       - name: Deploy to GitHub Pages

@@ -39,7 +39,7 @@ jobs:
       # Passo 5: Configurar as credenciais do Git
       - name: Set Git user credentials
         run: |
-          git config --global user.name "Matt-Alves07"
+          git config --global user.name "Matheus Alves"
           git config --global user.email "mathalves07.winstore@outlook.com"
 
       # Passo 6: Deploy no GitHub Pages

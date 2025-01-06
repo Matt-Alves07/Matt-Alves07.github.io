@@ -12,7 +12,7 @@ const Home = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           <Grid size={{ sm: 12, md: 3 }} id={styles.profile}>
-            <img src="/profile_picture.jpg" id={styles.profilePicture} alt="profile_picture"/>
+            <img src="./profile_picture.jpg" id={styles.profilePicture} alt="profile_picture"/>
 
             <div id={styles.nameAndContact}>
               <p>Matheus Alves</p>

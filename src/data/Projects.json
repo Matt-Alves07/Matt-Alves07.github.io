@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "nome": "Essential HTML & CSS",
+            "resumo": "In this repository, you can find several projects I developed by following an online course. Inside, you'll find three different projects built using only HTML, CSS, and JavaScript, as well as the course certificate.",
+            "link": "https://github.com/Matt-Alves07/HTML-CSSEssencial"
+        },
+        {
+            "nome": "Password generator",
+            "resumo": "Among the projects I developed using only HTML, CSS, and JavaScript, there are a few that, despite being simple, can be really useful. One of them is this password generator, which you can check in the button below.",
+            "link": "https://github.com/Matt-Alves07/FormacaoFrontendCompleta/tree/master/15_PasswordGenerator"
+        },
+        {
+            "nome": "QR Code generator",
+            "resumo": "Another one of the simple yet useful projects, this tool allows you to generate a QR code for any link you have. You can check it out through the button below.",
+            "link": "https://github.com/Matt-Alves07/FormacaoFrontendCompleta/tree/master/9_QRCodeGenerator"
+        },
+        {
+            "nome": "Angular - To-Do App",
+            "resumo": "In this repository, you can explore a To-Do app I developed using Angular. As a must-do for anyone starting with a web development framework like Angular, I couldn't resist building one myself.",
+            "link": "https://github.com/Matt-Alves07/AngularToDo"
+        },
+        {
+            "nome": "Angular - Stock Management",
+            "resumo": "As the name suggests, this is a stock management tool, developed using Angular and PrimeNg. It allows users to create as many categories and products as they wish.",
+            "link": "https://github.com/Matt-Alves07/AngularStockManagement"
+        },
+        {
+            "nome": "Angular - Weather App",
+            "resumo": "Following an online course, I created this simple weather app using Angular. It allows you to input the name of a city and retrieve the current weather forecast for that location.",
+            "link": "https://github.com/Matt-Alves07/AngularWeatherApp"
+        },
+        {
+            "nome": "Angular - Pokedex",
+            "resumo": "As a fan of the Pokémon franchise, I had to develop a Pokedex during my online courses. This app displays the data of all 151 first-generation Pokémon.",
+            "link": "https://github.com/Matt-Alves07/Pokedex-project"
+        },
+        {
+            "nome": "React - BMI Calculator",
+            "resumo": "While studying React, I developed a few projects, and one of them was this BMI (Body Mass Index) calculator. In this app, you input the necessary data (height and weight), and it calculates the BMI following the international standard.",
+            "link": "https://github.com/Matt-Alves07/FormacaoFrontendCompleta/tree/master/18_ReactIMCCalculator"
+        },
+        {
+            "nome": "React - Multi-step Form",
+            "resumo": "Another project I developed while learning React was a multi-step form, where I first used React icons. The form is simple but functional, serving as a feedback app for purchases. You can see more details in the button below.",
+            "link": "https://github.com/Matt-Alves07/FormacaoFrontendCompleta/tree/master/19_ReactMultiStepForm"
+        },
+        {
+            "nome": "React - Github finder",
+            "resumo": "A React project I developed that allows you to search for a GitHub user by their username. When the given username is found, it displays more details along with the projects the user has starred.",
+            "link": "https://github.com/Matt-Alves07/FormacaoFrontendCompleta/tree/master/24_ReactTSGithubFinder"
+        },
+        {
+            "nome": "C# - Task App",
+            "resumo": "A simple and minimal API project developed using C# to manage tasks with minimal code. It functions purely as a backend service, but you can check out the code by clicking the button below.",
+            "link": "https://github.com/Matt-Alves07/TaskControl"
+        },
+        {
+            "nome": "C# - Restaurant Management",
+            "resumo": "Although it's not a standard project, I also developed an app using C# that doesn't rely on APIs but instead uses the legacy MVC pattern to manage a simple restaurant. This allowed me to work not only on the backend but also on a bit of the frontend.",
+            "link": "https://github.com/Matt-Alves07/TaskControl"
+        }
+    ]
+}  

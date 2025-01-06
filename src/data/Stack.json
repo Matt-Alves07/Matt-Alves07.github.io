@@ -1,0 +1,235 @@
+{
+    "categories": [
+      {
+        "title": "Programming languages & related",
+        "id": "programmingLine",
+        "items": [
+          {
+            "title": "C#",
+            "seniority": "Senior",
+            "percentual": 95,
+            "iconName": "devicon-csharp-plain",
+            "description": "C# is my current backend programming language. I began using it while I was still in college and spent a few years with another language. However, for almost the past three years, I’ve been working with C# daily. To enhance my work, I use packages like NUnit and xUnit for testing, as well as Entity Framework Core, Dapper, and AutoMapper for faster delivery."
+          },
+          {
+            "title": "Javascript",
+            "seniority": "Mid-Senior",
+            "percentual": 70,
+            "iconName": "devicon-javascript-plain",
+            "description": "JavaScript is a programming language that powers a significant part of the internet. Initially, I wasn't a fan, but I decided to learn it to master it through experience. By finding the right resources, I not only learned JavaScript but also made it one of my top choices, making it the second programming language I have the most experience with."
+          },
+          {
+            "title": "Typescript",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-typescript-plain",
+            "description": "TypeScript was my next step after JavaScript. Initially, I wasn't entirely sure what to expect, but coming from a C# background, I quickly adapted. Thanks to this familiarity, I learned it rapidly. Nowadays, depending on the situation, I often consider whether to start a new project in TypeScript or JavaScript."
+          },
+          {
+            "title": "Docker",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-docker-plain",
+            "description": "I started working with Docker as a personal challenge, since at the time there was no professional demand for it. However, this experience changed the way I approached development. After learning about both Docker and Docker Compose, I now try to use them whenever possible in application development. This not only saves time by avoiding the need to install additional programs but also ensures that applications behave as expected in different environments."
+          }
+        ]
+      },
+      {
+        "title": "Git & DevOps",
+        "id": "git",
+        "items": [
+          {
+            "title": "Git",
+            "seniority": "Senior",
+            "percentual": 90,
+            "iconName": "devicon-git-plain",
+            "description": "I first encountered Git in college, but I only realized its full potential when I started working as an intern. Like most beginner developers I know, I struggled at first to understand what each command did and why I had to execute certain commands. Today, I use Git so automatically that I usually write most of the commands without the need for third-party tools."
+          },
+          {
+            "title": "Github",
+            "seniority": "Mid-Senior",
+            "percentual": 80,
+            "iconName": "devicon-github-original",
+            "description": "I first encountered GitHub in college, and, in addition to that, I’ve worked with it throughout most of my professional career. Nowadays, I can not only manage repositories, but also work with GitHub Actions, integrate it with other tools like Azure DevOps, and manage secrets using GitHub Secrets."
+          },
+          {
+            "title": "Gitlab",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-gitlab-plain",
+            "description": "I first encountered GitLab during a career transition and had the opportunity to work with this tool, which I had previously only known by name. Due to my greater familiarity with GitHub and some features that are exclusive to it, GitLab wouldn’t be my first choice for a code repository. However, I currently use it in my professional day-to-day work."
+          },
+          {
+            "title": "Azure DevOps",
+            "seniority": "Mid-Senior",
+            "percentual": 50,
+            "iconName": "devicon-azuredevops-plain",
+            "description": "This is the tool I've been using daily for the past few years. I not only manage the status of cards but also create new ones when needed and work on the integration with GitHub, which automates part of this process."
+          },
+          {
+            "title": "Github Actions",
+            "seniority": "Junior",
+            "percentual": 40,
+            "iconName": "devicon-githubactions-plain",
+            "description": "Although GitHub Actions is not the area where I excel the most, its release had a significant impact on the application development workflow. Today, GitHub not only centralizes code storage but also the DevOps process. With this change, which altered the way GitHub works, I couldn't just let it pass by, so I made an effort to study and gain, even if at a basic level, the knowledge required to create a functional DevOps pipeline."
+          }
+        ]
+      },
+      {
+        "title": "Databases and database tools",
+        "id": "databases",
+        "items": [
+          {
+            "title": "Dbeaver",
+            "seniority": "Mid-Senior",
+            "percentual": 75,
+            "iconName": "devicon-dbeaver-plain",
+            "description": "As a multifunctional tool for database development and management, DBeaver has become almost indispensable in my daily routine, as I need to run queries and manage tables in Oracle SQL and PostgreSQL databases, because it doesn't limit simultaneous access within a single application, as is the case with tools specific to those databases, it directly contributes to the performance of my work, making it an essential tool."
+          },
+          {
+            "title": "PostgreSQL",
+            "seniority": "Mid-Senior",
+            "percentual": 75,
+            "iconName": "devicon-postgresql-plain",
+            "description": "The database I've worked with the most in recent years. Although I first heard about it back in college, I had my first contact with it as soon as I started my professional career as an intern, and I saw how robust it could be. It was also where I learned the table creation standard, using the GUID type as the primary key. Today, whenever I think of or need to use a database that can work with this standard quickly and natively, I always prefer it."
+          },
+          {
+            "title": "Oracle SQL",
+            "seniority": "Mid-Senior",
+            "percentual": 65,
+            "iconName": "devicon-oracle-original",
+            "description": "As a robust option capable of storing large amounts of data, I have been working with Oracle SQL for almost three years now, performing queries and, periodically, maintaining the legacy database still used in the various microservices I work with."
+          },
+          {
+            "title": "MySQL",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-mysql-original",
+            "description": "My first contact with MySQL was during college. Since then, although I no longer use it daily, I always try to stay updated on new features. Additionally, when I need to create small applications, either for study purposes or while following a course on Udemy, it remains my first choice because it is free, very lightweight and I can use it with a docker compose configuration file."
+          },
+          {
+            "title": "Redis",
+            "seniority": "Junior",
+            "percentual": 40,
+            "iconName": "devicon-redis-plain",
+            "description": "Although I've worked relatively little with it, I had a very positive experience in the development of APIs that returned a few hundred records. Through Redis, most of the queries were made only once, which, along with the pagination of the results, ensured that the user was hardly impacted, even in this scenario."
+          },
+          {
+            "title": "MongoDB",
+            "seniority": "Junior",
+            "percentual": 25,
+            "iconName": "devicon-mongodb-plain",
+            "description": "Although I have had few opportunities to work with MongoDB, I was really impressed by its storage capacity and the speed of queries. It is definitely a tool I plan to dedicate more time to, in order to gain more experience using it in day-to-day tasks."
+          }
+        ]
+      },
+      {
+        "title": "Message queues",
+        "id": "messages",
+        "items": [
+          {
+            "title": "AWS SQS",
+            "seniority": "Mid-Senior",
+            "percentual": 80,
+            "iconName": "devicon-amazonwebservices-plain-wordmark",
+            "description": "I started working with SQS recently, and at first, I thought I knew exactly what it was. However, after studying it a bit more and continuing to work with it, I was amazed by how robust the service is. Today, due to its simplicity, reliability, and cost-effectiveness, SQS is definitely my first choice for a message queue."
+          },
+          {
+            "title": "RabbitMQ",
+            "seniority": "Mid-Senior",
+            "percentual": 70,
+            "iconName": "devicon-rabbitmq-plain",
+            "description": "I first encountered RabbitMQ when working in a legacy application. While I don't have much experience working with it in production yet, I had the opportunity to study it more in depth and take some courses. I plan to deepen my knowledge and understand when RabbitMQ might be more advantageous than other message queue options."
+          },
+          {
+            "title": "Apache Kafka",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-apachekafka-original",
+            "description": "I first encountered RabbitMQ when working in a legacy application. While I don't have much experience working with it in production yet, I had the opportunity to study it more in depth and take some courses. I plan to deepen my knowledge and understand when RabbitMQ might be more advantageous than other message queue options."
+          }
+        ]
+      },
+      {
+        "title": "Web Development",
+        "id": "web",
+        "items": [
+          {
+            "title": "HTML",
+            "seniority": "Mid-Senior",
+            "percentual": 75,
+            "iconName": "devicon-html5-plain",
+            "description": "Until recently, my skills with HTML were limited to the experiences I had during college. Because of that, I decided I couldn't settle for that and dedicated enough time to, for example, develop the HTML needed to build this portfolio, and I plan to keep improving my skills in the future."
+          },
+          {
+            "title": "CSS",
+            "seniority": "Mid-Senior",
+            "percentual": 70,
+            "iconName": "devicon-css3-plain",
+            "description": "Just like my experience with HTML was mostly limited to what I learned in college, my experience with CSS was also quite restricted. Knowing that I couldn't rely solely on that, and that CSS goes hand in hand with HTML, I dedicated time to improve my skills with it. As a result, much of this portfolio was built using CSS, as most of its styling was developed natively."
+          },
+          {
+            "title": "DevIcon",
+            "seniority": "Mid-Senior",
+            "percentual": 60,
+            "iconName": "devicon-devicon-plain",
+            "description": "The first time I heard about this icon set was in an online course, where I developed the first version of my portfolio. Since it’s a package that’s easy and quick to use, I didn’t limit myself to just the first version of my portfolio; all the icons listed on the stacks page come from this package."
+          },
+          {
+            "title": "Bootstrap",
+            "seniority": "Mid-Senior",
+            "percentual": 50,
+            "iconName": "devicon-bootstrap-plain",
+            "description": "After advancing my knowledge in HTML and CSS, as I believe every developer should, I needed to choose a CSS framework to gain experience in building websites while writing less style code. Since it is one of the most widely used libraries, I opted for Bootstrap. Although I'm not yet an expert in web development with this framework, I have learned significantly, which now allows me to create web pages with considerably less style code."
+          }
+        ]
+      },
+      {
+        "title": "Frontend frameworks/libraries",
+        "id": "frameworks",
+        "items": [
+          {
+            "title": "Angular",
+            "seniority": "Mid-Senior",
+            "percentual": 75,
+            "iconName": "devicon-angular-plain",
+            "description": "After learning both JavaScript and TypeScript, I chose to focus on Angular as a framework to leverage both skills. I was pleasantly surprised by how much I enjoyed working with it, especially its component structure and organizational features. Today, if I need to create a large app from scratch, Angular is definitely my first choice."
+          },
+          {
+            "title": "React",
+            "seniority": "Mid-Senior",
+            "percentual": 70,
+            "iconName": "devicon-react-original",
+            "description": "The result of my efforts over the past few months is this app, which speaks for itself. After learning Angular, I sought another tool to use as a full-stack software engineer, considering its market share. I decided to invest time in learning React, which I now prefer for creating new apps from scratch, especially for projects that don’t require the extensive capabilities of Angular for large applications."
+          }
+        ]
+      },
+      {
+        "title": "Javascript/Typescript testing",
+        "id": "jstesting",
+        "items": [
+          {
+            "title": "Jest",
+            "seniority": "Mid-Senior",
+            "percentual": 0,
+            "iconName": "devicon-jest-plain",
+            "description": "I started using Jest recently, after Jasmine and Karma fell out of use in Angular. Its simple setup and fast tests impressed me, and the integration of mocks, spies, and code coverage made the process much easier. Today, Jest is my go-to for JavaScript testing."
+          },
+          {
+            "title": "Jasmine",
+            "seniority": "Mid-Senior",
+            "percentual": 50,
+            "iconName": "devicon-jasmine-original",
+            "description": "I worked with Jasmine on older projects, where its simple syntax and integration with Karma stood out. However, over time, tools like Jest offered more speed and features, making Jasmine less appealing for new projects."
+          },
+          {
+            "title": "Karma",
+            "seniority": "Mid-Senior",
+            "percentual": 50,
+            "iconName": "devicon-karma-plain",
+            "description": "Karma was one of the first tools I used for Angular tests, allowing me to run tests across multiple browsers. However, with Jest's rise, offering faster tests and simpler setup, I migrated to more modern tools, although Karma still has its place in some scenarios."
+          }
+        ]
+      }
+    ]
+}  

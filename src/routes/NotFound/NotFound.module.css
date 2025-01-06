@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+.title {
+    font-size: 2rem;
+    color: #ff0000; /* Example color for the title */
+}
+  
+.message {
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+.link {
+    padding: .5rem;
+    transition: .3s;
+    color: #40A070;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #40A070;
+}
+
+.link:hover {
+    color: #FEFEFE;
+    border-color: transparent;
+    background-color: #40A070;
+}

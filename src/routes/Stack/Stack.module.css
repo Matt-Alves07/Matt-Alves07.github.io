@@ -1,0 +1,72 @@
+.container {
+    margin-right: 1rem;
+    padding: 2rem 21rem;
+}
+  
+.headerContainer {
+    position: relative;
+    margin: 20px 0;
+}
+  
+h2 {
+    z-index: 1;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: .3rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #40A070;
+}
+
+.stackCardContainer {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: flex-start !important;
+}
+
+@media (max-width: 500px) {
+    .container { padding: 1rem 0; }
+
+    h2 {
+        margin: 0 1.5rem;
+        font-size: 1.1rem;
+        text-align: center;
+        border-bottom: transparent;
+    }
+    
+    .stackCardContainer {
+        margin: 0 1rem;
+        margin-bottom: 5vh;
+        width: 100% !important;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .container { padding: 2rem 1rem; }
+    
+    h2 {
+        margin-left: 0;
+        text-align: center;
+        border-bottom: transparent;
+    }
+
+    .stackCardContainer {
+        margin: 0 3rem;
+        margin-bottom: 5vh;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container { padding: 2rem 1.5rem; }
+
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

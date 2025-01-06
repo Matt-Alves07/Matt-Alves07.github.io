@@ -1,0 +1,104 @@
+.experiences {
+    gap: 2rem;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.timeLineContainer {
+    width: 5px;
+    height: 130%;
+    position: relative;
+    background-color: #40A070;
+}
+
+.dot {
+    top: 3rem;
+    width: 15px;
+    height: 15px;
+    left: -.34rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #40A070;
+}
+
+.details {
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.jobTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.period {
+    color: #BBB;
+    font-size: 1rem;
+}
+  
+.summary {
+    font-size: 0.9rem;
+    padding-top: .5rem;
+}
+
+#latestExperience {
+    height: 90%;
+    margin-top: 3.5rem;
+}
+
+#oldestExperience {
+    height: 40%;
+    margin-bottom: 3.5rem;
+}
+
+#latestDot {
+    top: 0rem;
+    width: 15px;
+    height: 15px;
+    left: -.34rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #40A070;
+}
+
+#oldestDot {
+    width: 15px;
+    height: 15px;
+    bottom: -7rem;
+    left: -.34rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #40A070;
+}
+
+@media (max-width: 500px) {
+    .experiences {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+    .period { font-size: .9rem; }
+
+    #latestExperience { height: 95%; }
+    #oldestExperience { height: 22%; }
+    #oldestDot { left: -.34rem; }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    #oldestExperience { height: 25%; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #oldestExperience { height: 30%; }
+}

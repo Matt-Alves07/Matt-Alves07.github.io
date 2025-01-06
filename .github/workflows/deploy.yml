@@ -1,0 +1,56 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Passo 1: Check-out o código
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Passo 2: Configurar Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'  # Escolha a versão do Node.js que está usando no seu projeto
+
+      # Passo 3: Instalar as dependências
+      - name: Install dependencies
+        run: npm install
+
+      # Passo 3.1: Verificar dependências instaladas
+      - name: Check installed dependencies
+        run: npm list
+
+      # Passo 4: Rodar o build
+      - name: Build the project
+        run: npm run build
+
+      # Passo 4.1: Verificar se a pasta build foi criada
+      - name: Check if build folder exists
+        run: ls -la dist
+
+      # Passo 5: Configurar as credenciais do Git
+      - name: Set Git user credentials
+        run: |
+          git config --global user.name "Matt-Alves07"
+          git config --global user.email "mathalves07.winstore@outlook.com"
+
+      # Passo 6: Forçar o uso do GITHUB_TOKEN para autenticação com o repositório
+      - name: Set up GitHub Pages Deploy
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch --all
+          git checkout ${{ github.ref }}
+        
+      # Passo 7: Deploy no GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

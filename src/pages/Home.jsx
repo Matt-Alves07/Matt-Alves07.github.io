@@ -88,7 +88,7 @@ const Home = () => {
           </div>
         </motion.div>
 
-        <AboutContent />
+        <AboutContent isHome={true} />
       </div>
     </motion.div>
   );

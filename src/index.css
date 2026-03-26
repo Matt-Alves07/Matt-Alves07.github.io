@@ -31,8 +31,8 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background-image: 
     radial-gradient(circle at 15% 50%, rgba(64, 160, 112, 0.15), transparent 25%),
     radial-gradient(circle at 85% 30%, rgba(46, 128, 85, 0.15), transparent 25%);
@@ -75,13 +75,11 @@ button {
 .layout-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .main-content {
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 100px 2rem 3rem 2rem;
   display: flex;
   flex-direction: column;

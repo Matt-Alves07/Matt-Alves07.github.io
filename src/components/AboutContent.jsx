@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./AboutContent.css";
 
-const AboutContent = () => {
+const AboutContent = ({ isHome = false }) => {
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -13,9 +13,11 @@ const AboutContent = () => {
 
   return (
     <motion.div className="about-section" variants={itemVariants}>
-      {/* <p className="lead-text">
-        I'm glad for your visit, and I hope you find everything you need to know about me here!
-      </p> */}
+      {isHome && (
+        <p className="lead-text">
+          I'm glad for your visit, and I hope you find everything you need to know about me here!
+        </p>
+      )}
       <div className="text-blocks">
         <p>
           With a degree in Information Technology, a postgraduate degree in

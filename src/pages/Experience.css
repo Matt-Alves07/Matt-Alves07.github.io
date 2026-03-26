@@ -1,0 +1,87 @@
+.experience-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experience-header h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header .subtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Customizing the timeline lines */
+.custom-timeline::before {
+  background: var(--border-color) !important;
+}
+
+.vertical-timeline-element-title {
+  color: #fff;
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--accent-color);
+  font-size: 1.1rem !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.vertical-timeline-element p {
+  color: var(--text-secondary) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  text-align: justify;
+}
+
+.vertical-timeline-element-date {
+  color: #fff !important;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    color: var(--accent-secondary) !important;
+    opacity: 1;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-page-container {
+    padding: 1rem;
+  }
+  
+  .experience-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .experience-header {
+    margin-bottom: 2rem;
+  }
+  
+  .vertical-timeline-element p {
+    text-align: left;
+    font-size: 0.95rem !important;
+  }
+}

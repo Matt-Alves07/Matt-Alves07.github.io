@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiHome, FiBriefcase, FiLayers, FiCode } from 'react-icons/fi';
+import { FiMenu, FiX, FiHome, FiBriefcase, FiLayers, FiCode, FiUser } from 'react-icons/fi';
 import './Navbar.css';
 
 const navItems = [
   { name: 'Home', path: '/', icon: <FiHome /> },
+  { name: 'About', path: '/about', icon: <FiUser />, mobileOnly: true },
   { name: 'Projects', path: '/projects', icon: <FiBriefcase /> },
   { name: 'Experience', path: '/experience', icon: <FiLayers /> },
   { name: 'Stack', path: '/stack', icon: <FiCode /> }
@@ -36,7 +37,7 @@ const Navbar = () => {
           </NavLink>
 
           <div className="nav-links desktop-only">
-            {navItems.map((item) => (
+            {navItems.filter(item => !item.mobileOnly).map((item) => (
               <NavLink 
                 key={item.name} 
                 to={item.path} 

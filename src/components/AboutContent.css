@@ -1,0 +1,42 @@
+.about-section {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lead-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.text-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.text-blocks p {
+  transition: color var(--transition-fast);
+}
+
+.text-blocks p:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .text-blocks {
+    font-size: 0.95rem;
+    text-align: left;
+    gap: 1rem;
+    line-height: 1.5;
+  }
+}

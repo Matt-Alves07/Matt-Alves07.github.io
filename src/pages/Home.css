@@ -2,7 +2,7 @@
   max-width: 1200px;
   width: 100%;
   padding: 4rem;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   overflow: hidden;
 }
@@ -114,37 +114,7 @@
 .social-btn.email:hover { background: #ea4335; box-shadow: 0 10px 20px rgba(234, 67, 53, 0.4); border-color: #ea4335; }
 .social-btn.whatsapp:hover { background: #25d366; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4); border-color: #25d366; }
 
-.about-section {
-  flex: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
 
-.lead-text {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #fff;
-  line-height: 1.4;
-  border-left: 4px solid var(--accent-color);
-  padding-left: 1.5rem;
-}
-
-.text-blocks {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.text-blocks p {
-  transition: color var(--transition-fast);
-}
-
-.text-blocks p:hover {
-  color: #fff;
-}
 
 @media (max-width: 1025px) {
   .home-container {
@@ -157,7 +127,7 @@
     text-align: center;
   }
   
-  .about-section {
+  .home-container .about-section {
     display: none;
   }
   

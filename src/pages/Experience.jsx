@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,6 +12,27 @@ import {
   FaAngleDoubleUp,
 } from "react-icons/fa";
 import "./Experience.css";
+
+const ExpandableText = ({ text }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxLength = 150;
+  
+  if (text.length <= maxLength) return <p>{text}</p>;
+  
+  const displayText = isExpanded ? text : text.substring(0, maxLength) + "...";
+  
+  return (
+    <p>
+      {displayText}
+      <button 
+        onClick={() => setIsExpanded(!isExpanded)} 
+        className="read-more-btn"
+      >
+        {isExpanded ? " Show less" : " Read more"}
+      </button>
+    </p>
+  );
+};
 
 const Experience = () => {
   const containerVariants = {
@@ -70,16 +92,7 @@ const Experience = () => {
             Mid-Senior Software Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Compass.UOL</h4>
-          <p>
-            Driven by continuous professional growth, I was promoted to the
-            highest level within my current seniority. Over the past year, my
-            work has been deeply focused on cloud architecture, dealing daily
-            with Microsoft Azure resources. Earning the AZ-900 certification
-            further solidified my cloud expertise. My day-to-day
-            responsibilities heavily involve developing scalable serverless
-            architectures using Azure Functions in .NET, alongside seamlessly
-            managing API Management (APIM) services and cloud databases.
-          </p>
+          <ExpandableText text="Driven by continuous professional growth, I was promoted to the highest level within my current seniority. Over the past year, my work has been deeply focused on cloud architecture, dealing daily with Microsoft Azure resources. Earning the AZ-900 certification further solidified my cloud expertise. My day-to-day responsibilities heavily involve developing scalable serverless architectures using Azure Functions in .NET, alongside seamlessly managing API Management (APIM) services and cloud databases." />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -94,16 +107,7 @@ const Experience = () => {
             Mid-Senior Software Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Compass.UOL</h4>
-          <p>
-            Embracing the opportunity to expand my technical stack, I joined
-            Compass.UOL specifically to work as a dedicated .NET engineer—a
-            transition made possible by months of rigorous self-study and
-            building personal projects within the ecosystem. Leveraging my prior
-            enterprise experience, I smoothly transitioned into this new domain
-            at a mid-senior level. During this highly productive phase, I also
-            heavily committed to my academic growth, pursuing an MBA and two
-            postgraduate degrees simultaneously.
-          </p>
+          <ExpandableText text="Embracing the opportunity to expand my technical stack, I joined Compass.UOL specifically to work as a dedicated .NET engineer—a transition made possible by months of rigorous self-study and building personal projects within the ecosystem. Leveraging my prior enterprise experience, I smoothly transitioned into this new domain at a mid-senior level. During this highly productive phase, I also heavily committed to my academic growth, pursuing an MBA and two postgraduate degrees simultaneously." />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -120,16 +124,7 @@ const Experience = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Nasajon Sistemas
           </h4>
-          <p>
-            Reaching the Mid-Senior level was a significant milestone that
-            recognized my continuous technical growth and the impact of my work
-            on the company's core integrations. During this phase, I solidified
-            my expertise in software architecture, taking on greater autonomy in
-            decision-making and project delivery. Having successfully completed
-            a rewarding cycle of accelerated development and overcoming major
-            technical challenges, I felt fully prepared to explore new horizons
-            and take on larger-scale projects in a different environment.
-          </p>
+          <ExpandableText text="Reaching the Mid-Senior level was a significant milestone that recognized my continuous technical growth and the impact of my work on the company's core integrations. During this phase, I solidified my expertise in software architecture, taking on greater autonomy in decision-making and project delivery. Having successfully completed a rewarding cycle of accelerated development and overcoming major technical challenges, I felt fully prepared to explore new horizons and take on larger-scale projects in a different environment." />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -144,16 +139,7 @@ const Experience = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Nasajon Sistemas
           </h4>
-          <p>
-            Having established myself as the focal point for the ERP accounting
-            integration, I was promoted once again after just a year. This
-            period marked a significant expansion in my scope of
-            responsibilities. Tasked with addressing inherited technical debt,
-            I successfully resolved over 400 legacy bugs in the backlog while
-            simultaneously supporting my peers in the development of new 
-            features. My ability to balance these critical fixes with ongoing
-            product evolution led directly to my promotion to the next level.
-          </p>
+          <ExpandableText text="Having established myself as the focal point for the ERP accounting integration, I was promoted once again after just a year. This period marked a significant expansion in my scope of responsibilities. Tasked with addressing inherited technical debt, I successfully resolved over 400 legacy bugs in the backlog while simultaneously supporting my peers in the development of new features. My ability to balance these critical fixes with ongoing product evolution led directly to my promotion to the next level." />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -170,15 +156,7 @@ const Experience = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Nasajon Sistemas
           </h4>
-          <p>
-            Following an outstanding performance during my internship, I was
-            offered a full-time position in just one year—half the usual
-            timeline for interns. During this period, I successfully earned my
-            college degree. Amidst team restructuring, I stepped up and became
-            the focal point for the ERP integration project. Delivering
-            consistent, high-quality results in this critical role ultimately
-            paved the way for my next promotion.
-          </p>
+          <ExpandableText text="Following an outstanding performance during my internship, I was offered a full-time position in just one year—half the usual timeline for interns. During this period, I successfully earned my college degree. Amidst team restructuring, I stepped up and became the focal point for the ERP integration project. Delivering consistent, high-quality results in this critical role ultimately paved the way for my next promotion." />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -195,15 +173,7 @@ const Experience = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Nasajon Sistemas
           </h4>
-          <p>
-            Hired as an intern, I was assigned to the team responsible for
-            integrating the HR, financial, and tax departments with the
-            accounting area within an ERP system. During this time, I gained my
-            first hands-on experience with tools like ORMs, CI/CD pipelines,
-            and professional workflows. Beyond developing and debugging code,
-            I was also introduced to the complex business rules driving these
-            systemic integrations.
-          </p>
+          <ExpandableText text="Hired as an intern, I was assigned to the team responsible for integrating the HR, financial, and tax departments with the accounting area within an ERP system. During this time, I gained my first hands-on experience with tools like ORMs, CI/CD pipelines, and professional workflows. Beyond developing and debugging code, I was also introduced to the complex business rules driving these systemic integrations." />
         </VerticalTimelineElement>
       </VerticalTimeline>
     </motion.div>

@@ -3,55 +3,52 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
+      - main
       - master
 
+# Define as permissões essenciais para fazer o deploy nativo via GitHub Pages env
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
-
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
-      # Passo 1: Check-out o código
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      # Passo 2: Configurar Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Escolha a versão do Node.js que está usando no seu projeto
+          node-version: '20'
 
-      # Passo 3: Instalar as dependências
       - name: Install dependencies
         run: npm install
 
-      # Passo 3.1: Verificar dependências instaladas
-      - name: Check installed dependencies
-        run: npm list
+      - name: Run Tests (CI Mode)
+        run: npm test -- --run
 
-      # Passo 4: Rodar o build
       - name: Build the project
         run: npm run build
 
-      # Passo 4.1: Verificar se a pasta build foi criada
-      - name: Check if build folder exists
-        run: ls -la dist
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      # Passo 5: Configurar as credenciais do Git
-      - name: Set Git user credentials
-        run: |
-          git config --global user.name "Matt-Alves07"
-          git config --global user.email "mathalves07.winstore@outlook.com"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
 
-      # Passo 6: Forçar o uso do GITHUB_TOKEN para autenticação com o repositório
-      - name: Set up GitHub Pages Deploy
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git fetch --all
-          git checkout ${{ github.ref }}
-        
-      # Passo 7: Deploy no GitHub Pages
       - name: Deploy to GitHub Pages
-        run: |
-          npx gh-pages -d dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
+import Stack from './pages/Stack';
+import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/stack" element={<Stack />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

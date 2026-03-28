@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiServer, FiLayout, FiDatabase, FiTool } from "react-icons/fi";
+import { FiArrowLeft, FiServer, FiLayout, FiDatabase, FiTool } from "react-icons/fi";
 import "./Stack.css";
 
 const stackData = [
@@ -229,7 +229,7 @@ const Stack = () => {
                   className="back-btn"
                   onClick={() => setSelectedId(null)}
                 >
-                  <FiX /> Back to Categories
+                  <FiArrowLeft /> Back to Categories
                 </button>
                 <div className="expanded-title-area">
                   <motion.div

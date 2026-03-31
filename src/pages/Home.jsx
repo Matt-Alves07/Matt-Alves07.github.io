@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaDownload } from "react-icons/fa";
 import AboutContent from "../components/AboutContent";
 import "./Home.css";
 
@@ -51,38 +51,48 @@ const Home = () => {
             </h1>
             <h2 className="role">Software Engineer</h2>
 
-            <div className="social-links">
-              <a
-                href="https://github.com/Matt-Alves07"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-btn github"
+            <div className="links-container">
+              <div className="social-grid">
+                <a
+                  href="https://github.com/Matt-Alves07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn github"
+                >
+                  <FaGithub className="icon" /> <span>GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/matheusalves07/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn linkedin"
+                >
+                  <FaLinkedin className="icon" /> <span>LinkedIn</span>
+                </a>
+                <a
+                  href="mailto:matheus.alves523@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn email"
+                >
+                  <FaEnvelope className="icon" /> <span>Email</span>
+                </a>
+                <a
+                  href="https://wa.me/5521992339161"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn whatsapp"
+                >
+                  <FaWhatsapp className="icon" /> <span>WhatsApp</span>
+                </a>
+              </div>
+              
+              <a 
+                href="/Resume.pdf" 
+                download="Matheus_Alves_Resume.pdf"
+                className="resume-btn"
               >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/matheusalves07/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-btn linkedin"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="mailto:matheus.alves523@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-btn email"
-              >
-                <FaEnvelope />
-              </a>
-              <a
-                href="https://wa.me/5521992339161"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-btn whatsapp"
-              >
-                <FaWhatsapp />
+                <FaDownload className="icon" /> <span>Download Resume</span>
               </a>
             </div>
           </div>

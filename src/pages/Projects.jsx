@@ -41,6 +41,13 @@ const projectsData = [
     github: "https://github.com/Matt-Alves07/ConcurrencyInGo",
   },
   {
+    name: "Design Patterns in Go",
+    description:
+      "A project that demonstrates design patterns in Go, including SOLID, Creational, Structural, and Behavioral patterns.",
+    tags: ["Golang", "Backend", "Design Patterns"],
+    github: "https://github.com/Matt-Alves07/DesignPatternsInGo",
+  },
+  {
     name: "TypeScript Express",
     description:
       "A fully-featured strict backend API template built with Express.js leveraging the power and safety of TypeScript.",
